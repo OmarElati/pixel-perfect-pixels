@@ -423,14 +423,6 @@ export type Database = {
     }
     Functions: {
       create_firm: { Args: { _name: string }; Returns: string }
-      has_firm_role: {
-        Args: {
-          _firm_id: string
-          _role: Database["public"]["Enums"]["firm_role"]
-        }
-        Returns: boolean
-      }
-      is_firm_member: { Args: { _firm_id: string }; Returns: boolean }
       seed_demo_data: { Args: { _firm_id: string }; Returns: undefined }
     }
     Enums: {
